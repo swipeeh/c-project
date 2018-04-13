@@ -4,10 +4,10 @@ The purpose of this assignment is to recreate the memory game you created in ass
 ## Requirements
 
 ### Analysis and Design
-You must create a domain model (UML class diagram) and use it to structure your solution in abstract data types.
+You must create a domain model (UML class diagram). This should form the basis for structuring your solution using abstract data types.
 
 ### Test
-All functions and data types should be unit tested. Make the test first, then the code that solved the problem specified in the test.
+All functions and data types should be unit tested. Work in iterations where you make the test first, then the code that solves the problem specified in the test (and only that problem).
 
 ### Implementation
 Implement the game in C. The code should be well-structured preferably using abstract data types.
