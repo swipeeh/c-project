@@ -10,9 +10,10 @@
 #include <avr/interrupt.h>
 #include "atmega2560_drivers.h"
 
+init_stdio(0, 10000000L);
 
 int main(void)
 {
-	init_stdio(0, 10000000L);
+
 }
 
