@@ -5,27 +5,36 @@
  * Author : Patrik
  */ 
 
+#define F_CPU 10000000L
 #include <avr/io.h>
 #include <stdio.h>
 #include <avr/interrupt.h>
-#include "atmega2560_drivers.h"
+#include "addition.h"
+#include "subtraction.h"
+#include "multiplication"
+//#include "atmega2560_drivers.h"
+#include <util/delay.h>
+#include <time.h>
 
-init_stdio(0, 10000000L);
 
-void nextLevel(int level);
+
+//void nextLevel(int level);
 
 int main(void)
 {
 	DDRA = 0xff;
 	//int level = 1;
-	
+		
 	for (int i = 1; i < 3; i++)
 	{
-		if()
-		{
+		uint8_t state = PINB;
+		if(PINB == 0b11111111){
 		nextLevel(i);
 		PORTA = 0b11111111;
 		_delay_ms(1000);
+		}
+		else(PINB==0b11111110){
+			break;
 		}
 	}
 }
