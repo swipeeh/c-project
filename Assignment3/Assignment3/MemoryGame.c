@@ -4,7 +4,17 @@
  * Created: 30-Apr-18 10:28:40 AM
  *  Author: patih
  */ 
-class MemoryGame : iMemorygame
-	{
-	
-	}
+#define F_CPU 10000000L
+#include "iMemoryGame.h"
+#include <avr/io.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+void startGame(){};
+void endGame(){};
+void roundWon(){};
+void roundLost(){};
+void delay(){};
+void randomSequence(){};
+void readUserInput(){};
+void randomLevels(){};
