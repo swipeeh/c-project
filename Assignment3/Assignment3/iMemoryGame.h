@@ -19,7 +19,6 @@
 	void endGame();
 	void roundWon();
 	void roundLost();
-	void delay();
 	void randomSequence(memorygame_t *self);
 	bool compareNumbers(int a,int b);
 	void readUserInput();

@@ -34,11 +34,6 @@ void roundWon(){
 void roundLost(){
 	
 	};
-void delay()
-	{	
-	printf("PICKLE RIIIICK");	 
-	_delay_ms(10000);
-	};
 	
 int randomNumber(){
 	int n = rand() % 7;
