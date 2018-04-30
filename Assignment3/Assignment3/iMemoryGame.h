@@ -9,16 +9,22 @@
 #ifndef IMEMORYGAME_H_
 #define IMEMORYGAME_H_
 
-interface iMemorygame{
+	typedef struct memorygame_t
+	{
+		int level;
+		int *sequence;
+		}memorygame_t;
+	
 	void startGame();
 	void endGame();
 	void roundWon();
 	void roundLost();
 	void delay();
-	void randomSequence();
+	void randomSequence(memorygame_t *self);
+	bool compareNumbers(int a,int b);
 	void readUserInput();
 	void randomLevels();
-}
+
 
 
 
