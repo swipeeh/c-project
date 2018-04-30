@@ -2,7 +2,7 @@
  * Assignment3.c
  *
  * Created: 4/17/2018 10:29:35
- * Author : Patrik
+ * Author : Patrick 
  */ 
 
 #define F_CPU 10000000L
