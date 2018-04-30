@@ -60,40 +60,40 @@ bool compareNumbers(int a,int b){
 	return false;
 	};
 int convertValuefromPINBtoInt(int value){
-	if(value == 0){
-		PORTA = 254;
+	if(value == 254){
+		return 0;
 		_delay_ms(1000);
-	}else if (value == 1)
+	}else if (value == 253)
 	{
-		PORTA = 253;
-		_delay_ms(1000);
-	}
-	else if (value == 2)
-	{
-		PORTA = 251;
+		return 1;
 		_delay_ms(1000);
 	}
-	else if (value == 3)
+	else if (value == 251)
 	{
-		PORTA = 247;
+		return 2;
 		_delay_ms(1000);
 	}
-	else if (value == 4)
+	else if (value == 247)
 	{
-		PORTA = 239;
+		return 3;
 		_delay_ms(1000);
 	}
-	else if (value == 5)
+	else if (value == 239)
 	{
-		PORTA = 223;
+		return 4;
 		_delay_ms(1000);
-	}else if (value == 6)
+	}
+	else if (value == 223)
 	{
-		PORTA = 191;
+		return 5;
 		_delay_ms(1000);
-	}else if (value == 7)
+	}else if (value == 191)
 	{
-		PORTA = 127;
+		return 6;
+		_delay_ms(1000);
+	}else if (value == 127)
+	{
+		return 7;
 		_delay_ms(1000);
 	}
 	else{
