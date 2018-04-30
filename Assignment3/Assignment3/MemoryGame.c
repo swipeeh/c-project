@@ -9,12 +9,41 @@
 #include <avr/io.h>
 #include <stdio.h>
 #include <stdlib.h>
+#define F_CPU 10000000L
+#include <avr/io.h>
+#include <stdio.h>
+#include <avr/interrupt.h>
+#include "addition.h"
+#include "subtraction.h"
+#include "multiplication"
+//#include "atmega2560_drivers.h"
+#include <util/delay.h>
+#include <time.h>
 
-void startGame(){};
-void endGame(){};
-void roundWon(){};
-void roundLost(){};
-void delay(){};
-void randomSequence(){};
-void readUserInput(){};
-void randomLevels(){};
+
+void startGame(){
+		
+	};
+void endGame(){
+	
+	};
+void roundWon(){
+	
+	};
+void roundLost(){
+	
+	};
+void delay()
+	{	
+	printf("PICKLE RIIIICK");	 
+	_delay_ms(10000);
+	};
+void randomSequence(){
+	
+	};
+void readUserInput(){
+	
+	};
+void randomLevels(){
+	
+	};
