@@ -62,39 +62,31 @@ bool compareNumbers(int a,int b){
 int convertValuefromPINBtoInt(int value){
 	if(value == 254){
 		return 0;
-		_delay_ms(1000);
 	}else if (value == 253)
 	{
 		return 1;
-		_delay_ms(1000);
 	}
 	else if (value == 251)
 	{
 		return 2;
-		_delay_ms(1000);
 	}
 	else if (value == 247)
 	{
 		return 3;
-		_delay_ms(1000);
 	}
 	else if (value == 239)
 	{
 		return 4;
-		_delay_ms(1000);
 	}
 	else if (value == 223)
 	{
 		return 5;
-		_delay_ms(1000);
 	}else if (value == 191)
-	{
+	{		
 		return 6;
-		_delay_ms(1000);
 	}else if (value == 127)
 	{
 		return 7;
-		_delay_ms(1000);
 	}
 	else{
 		return -1;
