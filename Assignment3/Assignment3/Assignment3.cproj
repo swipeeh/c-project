@@ -150,6 +150,18 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="atmega2560_drivers.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="minunit.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Test.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Test.c">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="main.c">
       <SubType>compile</SubType>
     </Compile>
