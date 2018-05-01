@@ -150,13 +150,13 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="iMemoryGame.h">
-      <SubType>compile</SubType>
-    </Compile>
     <Compile Include="main.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="MemoryGame.c">
+    <Compile Include="timer.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="timer.h">
       <SubType>compile</SubType>
     </Compile>
   </ItemGroup>
