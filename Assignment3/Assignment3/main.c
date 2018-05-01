@@ -7,7 +7,7 @@
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
-#include "timer.h"
+#include <util/delay.h>
 
 int counter = 0;																							// used to keep track of inputs
 int results[5] = {0b00111111, 0b10011111, 0b00111111, 0b00111111, 0b00111111};								// array with results
@@ -32,7 +32,7 @@ int main(void)
 	{
 		counter = 0;																						// reset counter to 0
 		nextLevel(i);
-		_delay_ms(1000);																					// function containing next level
+		_delay_ms(10000);																					// function containing next level
 		int a = checkResult(i);																				// function for checking the answers is called, returns 0 or 1 (true or false)
 		if (a == 0)																							// if incorrect input was detected, failure sequence is displayed
 		{
@@ -40,7 +40,7 @@ int main(void)
 			break;																							// breaks out of the loops since the game is lost
 		}
 		PORTA = finish;																						// sequence depending on the result is displayed (win/lose sequence)
-		_delay_ms(2000);																					// time for player to prepare for the next level
+		_delay_ms(20000);																					// time for player to prepare for the next level
 	}
 	if (finish == 0b01010101)																				// if all levels are won, sequence indicating end of the game is displayed
 	{
@@ -56,9 +56,9 @@ void win(){																									// function which displays final win sequenc
 	for (int i = 0; i < 4; i++)
 	{
 		PORTA = 0b10101010;
-		_delay_ms(500);
+		_delay_ms(5000);
 		PORTA = 0b01010101;
-		_delay_ms(500);
+		_delay_ms(5000);
 	}
 	PORTA = 0xff;
 }
@@ -69,43 +69,43 @@ void nextLevel(int level)																					// function containing all levels
 	if (level == 1)
 	{
 		PORTA = 0b11111101;																					// each bit is displayed
-		_delay_ms(1000);																					// and followed by delay
+		_delay_ms(10000);																					// and followed by delay
 		
 	}
 	else if(level == 2)
 	{
 		PORTA = 0b11111101;
-		_delay_ms(1000);
+		_delay_ms(10000);
 		PORTA = 0b01111111;
 	}
 	else if(level == 3)
 	{
 		PORTA = 0b11111101;
-		_delay_ms(1000);
+		_delay_ms(10000);
 		PORTA = 0b01111111;
-		_delay_ms(1000);
+		_delay_ms(10000);
 		PORTA = 0b11011111;
 	}
 	else if(level == 4)
 	{
 		PORTA = 0b11111101;
-		_delay_ms(1000);
+		_delay_ms(10000);
 		PORTA = 0b01111111;
-		_delay_ms(1000);
+		_delay_ms(10000);
 		PORTA = 0b11011111;
-		_delay_ms(1000);
+		_delay_ms(10000);
 		PORTA = 0b11111110;
 	}
 	else if(level == 5)
 	{
 		PORTA = 0b11111101;
-		_delay_ms(1000);
+		_delay_ms(10000);
 		PORTA = 0b01111111;
-		_delay_ms(1000);
+		_delay_ms(10000);
 		PORTA = 0b11011111;
-		_delay_ms(1000);
+		_delay_ms(10000);
 		PORTA = 0b11111110;
-		_delay_ms(1000);
+		_delay_ms(10000);
 		PORTA = 0b11110111;
 	}
 }

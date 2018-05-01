@@ -16,7 +16,6 @@
 #include <util/delay.h>
 #include "atmega2560_drivers.h"
 #include "minunit.h"
-#include "main.c"
 
 static char * all_tests();
 

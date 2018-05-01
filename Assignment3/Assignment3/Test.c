@@ -19,7 +19,7 @@ static char * check_Test(){
 }
 
 static char * all_tests(){
-	mu_run_test();
+	mu_run_test(check_Test);
 	return 0;
 }
 
