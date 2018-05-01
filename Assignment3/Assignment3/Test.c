@@ -10,19 +10,20 @@
 
 int tests_run = 0;
 
-static char * win_Test(){
-	DDRA = 0xff;
-	PORTA = 0b10101010;
-	mu_assert("error,win() != 0b10101010" , PORTA == 0b10101010);
+static char * check_Test(){
+	int num = 5;
+	int num1 = 5;
+	int result = check(num,num1);
+	mu_assert("result !=1",result ==1);
 	return 0;
 }
 
 static char * all_tests(){
-	mu_run_test(win_Test());
+	mu_run_test();
 	return 0;
 }
 
- int main()
+ int mainTest()
  {
 	 init_stdio(0, 10000000L);
 	 sei();
