@@ -32,7 +32,7 @@ int main(void)
 	{
 		counter = 0;																						// reset counter to 0
 		nextLevel(i);
-		_delay_ms(1000);																						// function containing next level
+		_delay_ms(1000);																					// function containing next level
 		int a = checkResult(i);																				// function for checking the answers is called, returns 0 or 1 (true or false)
 		if (a == 0)																							// if incorrect input was detected, failure sequence is displayed
 		{
